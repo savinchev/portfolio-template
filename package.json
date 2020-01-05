@@ -18,5 +18,9 @@
         "gulp-strip-css-comments": "^2.0.0",
         "gulp-uglify": "^3.0.2",
         "panini": "^1.6.3"
+    },
+    "dependencies": {
+        "bootstrap": "^4.4.1",
+        "slick-carousel": "^1.8.1"
     }
 }
