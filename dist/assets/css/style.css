@@ -1926,6 +1926,13 @@ body {
     justify-content: center;
 }
 
+.content__title {
+    margin: 0 0 2rem;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #121212;
+}
+
 .intro__text {
     font-size: 1.2rem;
     color: #a1a1a1;
@@ -2238,6 +2245,44 @@ body {
 .input:focus {
     outline: 0;
     border-color: #ec3482;
+}
+
+.services {
+    margin-bottom: 2rem;
+}
+
+.services__item {
+    padding: 1.2rem;
+    position: relative;
+    height: 100%;
+    background-color: #fff;
+    border-radius: 10px;
+    -webkit-box-shadow: 0 0 25px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.05);
+}
+
+.services__icon {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 1rem;
+    left: 1.2rem;
+    z-index: 1;
+}
+
+.services__title {
+    padding-left: 5rem;
+    margin-top: .5rem;
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: #121212;
+}
+
+.services__text {
+    margin-top: 2rem;
+    font-size: 1em;
+    font-weight: 400;
+    color: #121212;
 }
 
 .footer {
