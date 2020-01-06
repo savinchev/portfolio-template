@@ -2043,6 +2043,18 @@ body {
     height: 85vh;
 }
 
+@media (max-width: 1300px) {
+    .author {
+        right: 2rem;
+    }
+}
+
+@media (max-width: 750px) {
+    .author {
+        display: none;
+    }
+}
+
 .circle {
     width: 70vh;
     height: 70vh;
@@ -2056,6 +2068,18 @@ body {
     right: 5rem;
     bottom: 10vh;
     z-index: 1;
+}
+
+@media (max-width: 1300px) {
+    .circle {
+        right: 2rem;
+    }
+}
+
+@media (max-width: 750px) {
+    .circle {
+        display: none;
+    }
 }
 
 @-webkit-keyframes circleRadius {

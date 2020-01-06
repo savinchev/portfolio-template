@@ -4,4 +4,11 @@
     bottom: 0;
     z-index: 2;
     height: 85vh;
+
+    @media(max-width: 1300px) {
+        right: 2rem;
+    }
+    @media(max-width: 750px) {
+        display: none;
+    }
 }
