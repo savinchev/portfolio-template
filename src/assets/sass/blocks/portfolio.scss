@@ -59,6 +59,17 @@
             transform: none;
         }
     }
+
+    @media(max-width: 1200px) {
+
+        .portfolio__img {
+            opacity: .3;
+        }
+        .portfolio__title{
+            transform: none;
+        }
+
+    }
 }
 
 .portfolio__link {

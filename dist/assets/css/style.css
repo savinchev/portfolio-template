@@ -2434,6 +2434,18 @@ body {
     transform: none;
 }
 
+@media (max-width: 1200px) {
+    .portfolio__item .portfolio__img {
+        opacity: .3;
+    }
+
+    .portfolio__item .portfolio__title {
+        -webkit-transform: none;
+        -ms-transform: none;
+        transform: none;
+    }
+}
+
 .portfolio__link {
     display: block;
 }
