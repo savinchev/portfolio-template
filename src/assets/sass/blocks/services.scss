@@ -1,5 +1,12 @@
 .services {
     margin-bottom: 2rem;
+
+    @media(max-width: 991px) {
+        
+        .col-lg-4 {
+            margin-bottom: 1.5rem;
+        }
+    }
 }
 
 .services__item {
@@ -10,6 +17,7 @@
     background-color: $white;
     border-radius: $radius;
     box-shadow: $shadow;
+
 }
 
 .services__icon {

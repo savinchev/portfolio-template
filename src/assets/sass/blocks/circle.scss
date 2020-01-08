@@ -17,9 +17,10 @@
         right: 2rem;
     }
 
-    @media(max-width: 750px) {
+    @media(max-width: 1120px) {
         display: none;
     }
+
 }
 
 @keyframes circleRadius {

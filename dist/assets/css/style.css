@@ -5,6 +5,12 @@ html {
     box-sizing: border-box;
 }
 
+@media (max-width: 450px) {
+    html {
+        font-size: 12px;
+    }
+}
+
 *,
 *::before,
 *::after {
@@ -1853,6 +1859,31 @@ body {
     align-items: center;
 }
 
+@media (max-width: 991px) {
+    .header__row > div {
+        margin-bottom: .5rem;
+    }
+
+    .header__row .nav {
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 450px) {
+    .header__row .nav {
+        display: block;
+    }
+
+    .header__row .nav .nav__link {
+        display: block;
+        margin: 0 auto 1rem auto;
+        width: 80%;
+        text-align: center;
+    }
+}
+
 .logo {
     color: #121212;
     font-size: 1.6rem;
@@ -1985,6 +2016,13 @@ body {
     background-color: #ec3482;
 }
 
+@media (max-width: 450px) {
+    .btn {
+        width: 100%;
+        text-align: center;
+    }
+}
+
 .contacts {
     margin: 1rem 0 0;
     padding: 0;
@@ -2049,7 +2087,13 @@ body {
     }
 }
 
-@media (max-width: 750px) {
+@media (max-width: 992px) {
+    .author {
+        height: 70vh;
+    }
+}
+
+@media (max-width: 768px) {
     .author {
         display: none;
     }
@@ -2076,7 +2120,7 @@ body {
     }
 }
 
-@media (max-width: 750px) {
+@media (max-width: 1120px) {
     .circle {
         display: none;
     }
@@ -2166,6 +2210,19 @@ body {
     -webkit-transition: fill .1s linear;
     -o-transition: fill .1s linear;
     transition: fill .1s linear;
+}
+
+@media (max-width: 576px) {
+    .modal {
+        padding: 0  1.5rem !important;
+    }
+
+    .modal .modal__close {
+        width: 1rem;
+        height: 1rem;
+        right: -1.2rem;
+        top: -1.2rem;
+    }
 }
 
 .modal-content {
@@ -2275,6 +2332,12 @@ body {
     margin-bottom: 2rem;
 }
 
+@media (max-width: 991px) {
+    .services .col-lg-4 {
+        margin-bottom: 1.5rem;
+    }
+}
+
 .services__item {
     padding: 1.2rem;
     position: relative;
@@ -2336,6 +2399,22 @@ body {
 
 .portfolio__slider.slick-initialized::after {
     display: none;
+}
+
+@media (max-width: 600px) {
+    .portfolio__slider {
+        height: auto;
+    }
+}
+
+@media (max-width: 450px) {
+    .portfolio__slider .portfolio__item {
+        margin-bottom: 1rem;
+    }
+
+    .portfolio__slider::after {
+        display: none;
+    }
 }
 
 .portfolio__item {

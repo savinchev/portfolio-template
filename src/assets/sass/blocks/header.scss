@@ -13,4 +13,29 @@
 
 .header__row {
     align-items: center;
+
+    @media(max-width: 991px) {
+        & > div {
+            margin-bottom: .5rem;
+        }
+
+        & .nav {
+            justify-content: center;
+        }
+    }
+
+    @media(max-width: 450px) {
+
+        & .nav {
+            display: block;
+            
+            .nav__link {
+                display: block;
+                margin: 0 auto 1rem auto;
+                width: 80%;
+
+                text-align: center;
+            }
+        }
+    }
 }
