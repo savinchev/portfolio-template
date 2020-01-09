@@ -1,12 +1,12 @@
 ;
 
-// *** Переменные
+    // *** Переменные
 
 var headerRow = document.querySelector('.header__row');
 var navLinks = document.querySelectorAll('.nav__link');
 var langItems = document.querySelectorAll('.lang__item');
 
-// *** Функции
+    // *** Функции
 
 // удаление класса
 function delClass (elems) {
@@ -26,13 +26,18 @@ function addClass (el) {
 function setActiveElToStorage(el, storageEl) {
 
     val = el.getAttribute('href') 
-    localStorage.setItem(storageEl, val)
+    sessionStorage.setItem(storageEl, val)
+}
+
+// очищение localStorage
+function clearStorage() {
+    return 'clear storage'
 }
 
 // получение активного элемента из localStorage при перезагрузке страницы
 function getActiveElFromStorage(elements, storageEl) {
 
-    var active = localStorage.getItem(storageEl)
+    var active = sessionStorage.getItem(storageEl)
 
     // проверяем есть ли сохраненное значение в storage
     if(active) {
@@ -68,6 +73,13 @@ function buttonHandler(event) {
         setActiveElToStorage(target, 'activePage')
     }
 
+    // при клике на логотип работаем с кнопкой "Главная"
+    if (target.classList.contains('logo') && (!navLinks[0].classList.contains('active'))) {
+        delClass(navLinks)
+        addClass(navLinks[0])
+        setActiveElToStorage(navLinks[0], 'activePage')
+    }
+
     if (target.classList.contains('lang__item') && (!target.classList.contains('active'))) {
         delClass(langItems)
         addClass(target)
@@ -75,11 +87,11 @@ function buttonHandler(event) {
     }
 }
 
-// *** Обработчики
+    // *** Обработчики
 
 headerRow.addEventListener('click', buttonHandler);
 
 
-getActiveElFromStorage(navLinks, 'activePage')
-getActiveElFromStorage(langItems, 'activeLang')
+getActiveElFromStorage(navLinks, 'activePage');
+getActiveElFromStorage(langItems, 'activeLang');
 
